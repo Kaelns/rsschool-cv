@@ -1,3 +1,7 @@
+/* Reset styles */
+@import "reset";
+/* Reset ends */
+
 html {
   box-sizing: border-box;
 }
@@ -6,4 +10,12 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
+}
+
+/* Сonnect fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:wght@400;700&display=swap");
+/* Connect end */
+
+.main {
+  display: flex;
 }

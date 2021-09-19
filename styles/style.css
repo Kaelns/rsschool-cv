@@ -11,9 +11,7 @@ html {
   box-sizing: border-box;
 }
 
-*,
-*::after,
-*::before {
+* {
   box-sizing: inherit;
 }
 
@@ -62,6 +60,7 @@ body {
   font-size: 1.25em;
   font-weight: 700;
   margin-bottom: 20px;
+  border-bottom: solid 4px hsl(42, 90%, 50%);
 }
 
 .document__wrapper {
@@ -110,17 +109,28 @@ body {
   line-height: 30px;
   margin-bottom: 20px;
 }
-/* contact */
-.contact__image {
-  background-position: center left;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
+/* aside-contact */
+.contact__block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
-/* contact end*/
+.contact__block img {
+  width: 25px;
+  margin-right: 10px;
+}
+.contact__link {
+  color: hsl(0, 0%, 20%);
+  transition: all 0.4s ease-out;
+  text-decoration: none;
+}
+
+.contact__link:hover {
+  color: hsl(42, 70%, 50%);
+  text-decoration: none;
+}
+/* aside-contact end*/
 /* aside end */
 /* section */
 

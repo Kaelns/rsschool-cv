@@ -22,15 +22,15 @@
     </header>
     <main class="main wrapper">
       <aside class="aside">
-        <figure class="main-aside__figure">
+        <figure class="aside__avatar">
           <img src="/images/avatar.jpg" alt="Avatar" />
         </figure>
-        <div>
-          <h1>Yury Ahanouski</h1>
-          <h3>Web developer</h3>
+        <div class="name__wrapper">
+          <h1 class="name__title">Yury Ahanouski</h1>
+          <h3 class="name__subtitle">Web developer</h3>
         </div>
-        <div>
-          <h4>Contacts</h4>
+        <div class="document__wrapper">
+          <h4 class="document__title">Contacts</h4>
           <ul>
             <li>Location: Minsk, Belarus</li>
             <li>Phone: +375 25 772-09-34</li>
@@ -41,8 +41,8 @@
             <li>YouTube: Kaeln Larien</li>
           </ul>
         </div>
-        <div>
-          <h4>Skills</h4>
+        <div class="document__wrapper">
+          <h4 class="document__title">Skills</h4>
           <ul>
             <li>HTML</li>
             <li>CSS</li>
@@ -50,8 +50,8 @@
             <li>Git</li>
           </ul>
         </div>
-        <div>
-          <h4>Languages</h4>
+        <div class="document__wrapper">
+          <h4 class="document__title">Languages</h4>
           <ul>
             <li>Russian - native</li>
             <li>English - A2</li>
@@ -59,32 +59,42 @@
           </ul>
         </div>
       </aside>
-      <section class="main-section">
-        <h4>About Me</h4>
-        <p>
-          I am 21 years old and I am very interested in programming. Honestly
-          without any exaggeration I am quite strong in learning something
-          because I have a good memory and the ability to apply the knowledge
-          laid down in it, and I am also diligent in order to finish my work. In
-          addition, I am quite sociable and can find a common language with
-          other people.
-        </p>
-        <h4>Education</h4>
-        <ul>
-          <li>
-            Belarusian National Technical University
-            <ul>
-              <li>Power engineer of electric power stations</li>
-            </ul>
-          </li>
-          <li>
-            Courses
-            <ul>
-              <li>JS, CSS, HTML courses on Code Basics</li>
-            </ul>
-          </li>
-        </ul>
-        <img src="" alt="html, css and js" />
+      <section class="section">
+        <div class="document__wrapper">
+          <h4 class="document__title">About Me</h4>
+          <p>
+            I am 21 years old and I am very interested in programming. Honestly
+            without any exaggeration I am quite strong in learning something
+            because I have a good memory and the ability to apply the knowledge
+            laid down in it, and I am also diligent in order to finish my work.
+            In addition, I am quite sociable and can find a common language with
+            other people.
+          </p>
+        </div>
+        <div class="document__wrapper">
+          <h4 class="document__title">Education</h4>
+          <ul>
+            <li>
+              Belarusian National Technical University
+              <ul>
+                <li>Power engineer of electric power stations</li>
+              </ul>
+            </li>
+            <li>
+              Courses
+              <ul>
+                <li>JS, CSS, HTML courses on Code Basics</li>
+              </ul>
+            </li>
+          </ul>
+
+          <img
+            class="document__image"
+            src="/images/courses.png"
+            alt="html, css and js"
+          />
+        </div>
+        <div class="document__wrapper"></div>
       </section>
     </main>
     <footer class="footer wrapper">

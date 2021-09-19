@@ -11,25 +11,37 @@
     <header class="header wrapper">
       <nav class="navigation burger">
         <ul class="navigation__wrapper">
-          <li>Contacts</li>
-          <li>Skills</li>
-          <li>Languages</li>
-          <li>About Me</li>
-          <li>Education</li>
-          <li>Code Example</li>
+          <li class="navigation__text">
+            <a class="link" href="#contacts">Contacts</a>
+          </li>
+          <li class="navigation__text">
+            <a class="link" href="#skills">Skills</a>
+          </li>
+          <li class="navigation__text">
+            <a class="link" href="#languages">Languages</a>
+          </li>
+          <li class="navigation__text">
+            <a class="link" href="#about-me">About Me</a>
+          </li>
+          <li class="navigation__text">
+            <a class="link" href="#education">Education</a>
+          </li>
+          <li class="navigation__text">
+            <a class="link" href="#code-example">Code Example</a>
+          </li>
         </ul>
       </nav>
     </header>
     <main class="main wrapper">
       <aside class="aside">
         <figure class="aside__avatar">
-          <img src="images/avatar.jpg" alt="Avatar" />
+          <img src="images/avatar.jpg" alt="Avatar" class="aside__img" />
         </figure>
         <div class="name__wrapper">
           <h1 class="name__title">Yury Ahanouski</h1>
           <h3 class="name__subtitle">Web developer</h3>
         </div>
-        <div class="document__wrapper">
+        <div class="document__wrapper" id="contacts">
           <h4 class="document__title">Contacts</h4>
           <ul>
             <li class="contact__block">
@@ -82,26 +94,26 @@
             </li>
           </ul>
         </div>
-        <div class="document__wrapper">
+        <div class="document__wrapper" id="skills">
           <h4 class="document__title">Skills</h4>
           <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript (Basic)</li>
-            <li>Git</li>
+            <li class="skill__block">HTML</li>
+            <li class="skill__block">CSS</li>
+            <li class="skill__block">JS Basic</li>
+            <li class="skill__block">Git</li>
           </ul>
         </div>
-        <div class="document__wrapper">
+        <div class="document__wrapper" id="languages">
           <h4 class="document__title">Languages</h4>
           <ul>
-            <li>Russian - native</li>
-            <li>English - A2</li>
-            <li>Polish - Basic</li>
+            <li class="language__block">Russian - native</li>
+            <li class="language__block">English - A2</li>
+            <li class="language__block">Polish - Basic</li>
           </ul>
         </div>
       </aside>
       <section class="section">
-        <div class="document__wrapper">
+        <div class="document__wrapper" id="about-me">
           <h4 class="document__title">About Me</h4>
           <p>
             I am 21 years old and I am very interested in programming. Honestly
@@ -112,7 +124,7 @@
             other people.
           </p>
         </div>
-        <div class="document__wrapper">
+        <div class="document__wrapper" id="education">
           <h4 class="document__title">Education</h4>
           <ul>
             <li>
@@ -135,7 +147,7 @@
             alt="html, css and js"
           />
         </div>
-        <div class="document__wrapper">
+        <div class="document__wrapper" id="code-example">
           <h4 class="document__title">Code example</h4>
         </div>
       </section>

@@ -9,9 +9,10 @@
 html {
   width: 100%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-* {
+* *::after *::before {
   box-sizing: inherit;
 }
 
@@ -33,7 +34,7 @@ body {
   margin: 0 auto;
 }
 
-/* Header */
+/* Header....................................... */
 
 .header {
   width: 100%;
@@ -44,10 +45,25 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 15px 20px;
+  padding: 15px 50px;
 }
 
-/*Header end*/
+.navigation__text {
+  font-size: 25px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+.link {
+  color: hsl(0, 0%, 20%);
+  text-decoration: none;
+  transition: all 0.4s ease-out;
+}
+
+.link:hover {
+  color: hsl(35, 100%, 40%);
+}
+
+/*Header end....................................*/
 
 .main {
   display: flex;
@@ -74,7 +90,7 @@ body {
   object-fit: cover;
 }
 
-/* aside */
+/* aside......................................*/
 
 .aside {
   width: 40%;
@@ -85,9 +101,12 @@ body {
 .aside__avatar {
   display: flex;
   justify-content: center;
-  height: 350px;
-  max-width: 250px;
+  height: 450px;
+  max-width: 300px;
   margin: 20px auto;
+}
+.aside__img {
+  border-radius: 5px;
 }
 
 .name__wrapper {
@@ -109,7 +128,7 @@ body {
   line-height: 30px;
   margin-bottom: 20px;
 }
-/* aside-contact */
+/* aside-contact................ */
 .contact__block {
   display: flex;
   align-items: center;
@@ -130,8 +149,30 @@ body {
   color: hsl(42, 70%, 50%);
   text-decoration: none;
 }
-/* aside-contact end*/
-/* aside end */
+
+/* aside-contact end............*/
+/* aside-skill and language.....*/
+
+.skill__block,
+.language__block {
+  margin: 0 15px;
+  position: relative;
+}
+
+.skill__block::before,
+.language__block::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: calc(50% - 3.5px);
+  display: block;
+  height: 9px;
+  width: 9px;
+  background-color: hsl(0, 0%, 20%);
+  border-radius: 100%;
+}
+/* aside-skill and language end*/
+/* aside end................................... */
 /* section */
 
 .section {

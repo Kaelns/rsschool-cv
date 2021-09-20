@@ -10,29 +10,32 @@
   </head>
   <body>
     <header class="header wrapper">
-      <nav class="navigation burger">
-        <ul class="navigation__wrapper">
-          <li class="navigation__text">
+      <nav class="header__nav">
+        <ul class="header__nav__wrapper">
+          <li class="nav__text">
             <a class="link" href="#contacts">Contacts</a>
           </li>
-          <li class="navigation__text">
+          <li class="nav__text">
             <a class="link" href="#skills">Skills</a>
           </li>
-          <li class="navigation__text">
+          <li class="nav__text">
             <a class="link" href="#languages">Languages</a>
           </li>
-          <li class="navigation__text">
+          <li class="nav__text">
             <a class="link" href="#about-me">About Me</a>
           </li>
-          <li class="navigation__text">
+          <li class="nav__text">
             <a class="link" href="#education">Education</a>
           </li>
-          <li class="navigation__text">
+          <li class="nav__text">
             <a class="link" href="#code-example">Code Example</a>
           </li>
         </ul>
       </nav>
     </header>
+    <button class="button burger-btn" type="button">
+      <span class="burger-btn__line"></span>
+    </button>
     <main class="main wrapper">
       <aside class="aside">
         <figure class="aside__avatar">
@@ -46,19 +49,19 @@
           <h4 class="document__title">Contacts</h4>
           <ul>
             <li class="contact__block">
-              <img src="fonts/pin.svg" alt="Location:" />
+              <img src="icons/pin.svg" alt="Location:" />
               Minsk, Belarus
             </li>
             <li class="contact__block">
-              <img src="fonts/phone.svg" alt="Phone" />
+              <img src="icons/phone.svg" alt="Phone" />
               +375 25 772-09-34
             </li>
             <li class="contact__block">
-              <img src="fonts/email.svg" alt="E-mail" />
+              <img src="icons/email.svg" alt="E-mail" />
               uraaru@live.com
             </li>
             <li class="contact__block">
-              <img src="fonts/github.svg" alt="GitHub" />
+              <img src="icons/github.svg" alt="GitHub" />
               <a
                 href="https://github.com/Kaelns"
                 class="contact__link"
@@ -67,7 +70,7 @@
               >
             </li>
             <li class="contact__block">
-              <img src="fonts/telegram.svg" alt="Telegram" />
+              <img src="icons/telegram.svg" alt="Telegram" />
               <a
                 href="https://t.me/Kaelns"
                 class="contact__link"
@@ -76,7 +79,7 @@
               >
             </li>
             <li class="contact__block">
-              <img src="fonts/vk.svg" alt="VK" />
+              <img src="icons/vk.svg" alt="VK" />
               <a
                 href="https://vk.com/kaelnslarien"
                 class="contact__link"
@@ -85,7 +88,7 @@
               >
             </li>
             <li class="contact__block">
-              <img src="fonts/youtube.svg" alt="YouTube" />
+              <img src="icons/youtube.svg" alt="YouTube" />
               <a
                 href="https://www.youtube.com/channel/UCDk2HbuqZYeDHuIPtGbr8qQ"
                 class="contact__link"
@@ -157,7 +160,7 @@
           <h4 class="document__title">Code example</h4>
 
           <pre>
-            <code class="javascript">
+            <code class="code__item">
      const encrypt = (str) => {
       let result = '';
 
@@ -176,20 +179,21 @@
     <footer class="footer wrapper">
       <div class="footer__block">
         <a href="https://github.com/Kaelns" target="_blank">
-          <img src="./fonts/github.svg" alt="Github" class="footer__img-1" />
+          <img src="./icons/github.svg" alt="Github" class="footer__img-1" />
         </a>
       </div>
       <div class="footer__text">2021</div>
       <div class="footer__block">
         <a href="https://rs.school/js/" target="_blank">
           <img
-            src="./fonts/rsschool.svg"
+            src="./icons/rsschool.svg"
             alt="Rsschool"
             class="footer__img-2"
           />
         </a>
       </div>
     </footer>
+    <script src="scripts/script.js"></script>
     <script src="libs/highlight.min.js"></script>
     <script>
       hljs.highlightAll();

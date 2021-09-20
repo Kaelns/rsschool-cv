@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="libs/codeschool.min.css" />
     <title>CV</title>
   </head>
   <body>
@@ -66,6 +67,15 @@
               >
             </li>
             <li class="contact__block">
+              <img src="fonts/github.svg" alt="GitHub" />
+              <a
+                href="https://github.com/Kaelns"
+                class="contact__link"
+                target="_blank"
+                >Kaelns</a
+              >
+            </li>
+            <li class="contact__block">
               <img src="fonts/telegram.svg" alt="Telegram" />
               <a
                 href="https://t.me/Kaelns"
@@ -115,7 +125,7 @@
       <section class="section">
         <div class="document__wrapper" id="about-me">
           <h4 class="document__title">About Me</h4>
-          <p>
+          <p class="about-me__text">
             I am 21 years old and I am very interested in programming. Honestly
             without any exaggeration I am quite strong in learning something
             because I have a good memory and the ability to apply the knowledge
@@ -149,15 +159,42 @@
         </div>
         <div class="document__wrapper" id="code-example">
           <h4 class="document__title">Code example</h4>
+          <pre class="pre">
+            <code class="javascript">
+        const encrypt = (str) => {
+          let result = '';
+
+           for (let i = 0; i < str.length; i += 2) {
+            const nextNumber = str[ i + 1 ] || '';
+            result = `${result}${ nextNumber }${str[ i ]}`;
+            }
+           return result;
+        };
+          </code>
+        </pre>
         </div>
       </section>
     </main>
     <footer class="footer wrapper">
-      <div>
-        <a href="https://github.com/Kaelns" target="_blank" class=""></a>
-        <p>2021</p>
-        <a href="https://rs.school/js/" target="_blank" class=""></a>
+      <div class="footer__block">
+        <a href="https://github.com/Kaelns" target="_blank">
+          <img src="./fonts/github.svg" alt="Github" class="footer__img-1" />
+        </a>
+      </div>
+      <div class="footer__text">2021</div>
+      <div class="footer__block">
+        <a href="https://rs.school/js/" target="_blank">
+          <img
+            src="./fonts/rsschool.svg"
+            alt="Rsschool"
+            class="footer__img-2"
+          />
+        </a>
       </div>
     </footer>
+    <script src="libs/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
   </body>
 </html>

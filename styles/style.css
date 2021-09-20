@@ -180,6 +180,15 @@ body {
   padding: 20px 50px 0;
 }
 
+.about-me__text {
+  text-indent: 20px;
+}
+
+.pre {
+  margin: 0;
+  padding: 0;
+}
+
 /* section end */
 
 footer {
@@ -188,4 +197,22 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: hsl(42, 90%, 50%);
+}
+
+.footer__block {
+  padding: 15px;
+}
+.footer__text {
+  font-size: 40px;
+  font-weight: 700;
+  color: black;
+  margin: 0 50px;
+}
+
+.footer__img-1 {
+  height: 55px;
+}
+
+.footer__img-2 {
+  height: 40px;
 }

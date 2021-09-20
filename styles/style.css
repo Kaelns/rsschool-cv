@@ -36,7 +36,7 @@ body {
 
 .header__nav__wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   padding: 15px 50px;
 }
@@ -61,7 +61,7 @@ body {
 
 .main {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background-color: hsl(0, 0%, 100%);
 }
 
@@ -87,7 +87,7 @@ body {
 /* aside......................................*/
 
 .aside {
-  width: 40%;
+  width: 100%;
   padding: 20px 50px 0;
   background-color: hsl(42, 20%, 77%);
 }
@@ -170,7 +170,7 @@ body {
 /* section */
 
 .section {
-  width: 60%;
+  width: 100%;
   padding: 20px 50px 0;
 }
 
@@ -243,8 +243,8 @@ footer {
 /* burger................................. */
 .burger-btn {
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 5px;
+  top: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -285,51 +285,33 @@ footer {
   top: 75%;
 }
 /* burger end............................. */
-
 .js-hide-nav {
-  display: none;
+  visibility: hidden;
+  padding: 0;
+  margin: 0;
+  height: 0;
 }
-
-.js-mobile-nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 10px 0;
-  border-bottom: 1px solid #fff;
-}
-
-.js-open-burger .burger-btn__line {
-  width: 0;
-}
-
-.js-open-burger::before,
-.js-open-burger::after {
-  top: 50%;
-  transform-origin: top center;
-}
-
-.js-open-burger::before {
-  transform: rotate(45deg) translateY(-50%);
-}
-
-.js-open-burger::after {
-  transform: rotate(-45deg) translateY(-50%);
-}
-
 /* Media............................................ */
 
 @media (min-width: 480px) {
-  .header__button {
-    width: 40px;
-    height: 40px;
-  }
-
   .code__item {
     font-size: 13px;
   }
 }
 
 @media (min-width: 768px) {
+  .aside {
+    width: 40%;
+  }
+
+  .section {
+    width: 60%;
+  }
+
+  .main {
+    flex-direction: row;
+  }
+
   .header__button {
     width: 50px;
     height: 50px;
@@ -342,16 +324,24 @@ footer {
 }
 
 @media (min-width: 1024px) {
+  .burger-btn {
+    left: -100px;
+  }
+
+  .js-hide-nav {
+    visibility: visible;
+    padding: inherit;
+    margin: inherit;
+    height: inherit;
+  }
+
+  .header__nav__wrapper {
+    flex-direction: row;
+  }
+
   .header {
     width: 100%;
     background-color: hsl(42, 90%, 50%);
-  }
-
-  .header__nav {
-    position: static;
-    display: block;
-    padding: 0;
-    border-bottom: 0;
   }
 
   .header__button {

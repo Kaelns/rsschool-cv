@@ -67,15 +67,6 @@
               >
             </li>
             <li class="contact__block">
-              <img src="fonts/github.svg" alt="GitHub" />
-              <a
-                href="https://github.com/Kaelns"
-                class="contact__link"
-                target="_blank"
-                >Kaelns</a
-              >
-            </li>
-            <li class="contact__block">
               <img src="fonts/telegram.svg" alt="Telegram" />
               <a
                 href="https://t.me/Kaelns"
@@ -122,6 +113,7 @@
           </ul>
         </div>
       </aside>
+      <!-- ! Section__________________________________ -->
       <section class="section">
         <div class="document__wrapper" id="about-me">
           <h4 class="document__title">About Me</h4>
@@ -137,16 +129,20 @@
         <div class="document__wrapper" id="education">
           <h4 class="document__title">Education</h4>
           <ul>
-            <li>
+            <li class="education__elem1">
               Belarusian National Technical University
               <ul>
-                <li>Power engineer of electric power stations</li>
+                <li class="education__elem2 elem3">
+                  Power engineer of electric power stations
+                </li>
               </ul>
             </li>
-            <li>
+            <li class="education__elem1">
               Courses
               <ul>
-                <li>JS, CSS, HTML courses on Code Basics</li>
+                <li class="education__elem2 elem3">
+                  JS, CSS, HTML courses on Code Basics
+                </li>
               </ul>
             </li>
           </ul>
@@ -159,22 +155,24 @@
         </div>
         <div class="document__wrapper" id="code-example">
           <h4 class="document__title">Code example</h4>
-          <pre class="pre">
-            <code class="javascript">
-        const encrypt = (str) => {
-          let result = '';
 
-           for (let i = 0; i < str.length; i += 2) {
-            const nextNumber = str[ i + 1 ] || '';
-            result = `${result}${ nextNumber }${str[ i ]}`;
-            }
-           return result;
-        };
+          <pre>
+            <code class="javascript">
+     const encrypt = (str) => {
+      let result = '';
+
+      for (let i = 0; i &lt str.length; i += 2) {
+       const nextNumber = str[ i + 1 ] || '';
+        result = `${result}${ nextNumber }${str[ i ]}`;
+      }
+       return result;
+     };
           </code>
         </pre>
         </div>
       </section>
     </main>
+    <!-- ! Footer____________________________________ -->
     <footer class="footer wrapper">
       <div class="footer__block">
         <a href="https://github.com/Kaelns" target="_blank">

@@ -22,7 +22,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   font-family: "Inter", sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 400;
   line-height: 1.6;
   color: hsl(0, 0%, 20%);
@@ -53,6 +53,7 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 700;
 }
+
 .link {
   color: hsl(0, 0%, 20%);
   text-decoration: none;
@@ -155,7 +156,7 @@ body {
 
 .skill__block,
 .language__block {
-  margin: 0 15px;
+  margin: 5px 15px;
   position: relative;
 }
 
@@ -181,12 +182,41 @@ body {
 }
 
 .about-me__text {
-  text-indent: 20px;
+  text-indent: 40px;
 }
 
-.pre {
-  margin: 0;
-  padding: 0;
+.education__elem1 {
+  margin: 0 15px;
+  position: relative;
+}
+
+.education__elem1::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: calc(25% - 5px);
+  display: block;
+  height: 10px;
+  width: 10px;
+  background-color: hsl(42, 90%, 50%);
+  border-radius: 100%;
+}
+
+.education__elem2 {
+  margin: 5px 15px;
+  position: relative;
+}
+
+.education__elem2::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: calc(50% - 5px);
+  display: block;
+  height: 10px;
+  width: 10px;
+  background-color: hsl(30, 90%, 50%);
+  border-radius: 100%;
 }
 
 /* section end */
@@ -203,16 +233,16 @@ footer {
   padding: 15px;
 }
 .footer__text {
-  font-size: 40px;
+  font-size: 25px;
   font-weight: 700;
   color: black;
-  margin: 0 50px;
+  margin: 0 40px;
 }
 
 .footer__img-1 {
-  height: 55px;
+  height: 45px;
 }
 
 .footer__img-2 {
-  height: 40px;
+  height: 30px;
 }
